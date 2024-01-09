@@ -7,5 +7,55 @@
     #99D959
     #F2762E
 */
-
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    background-image: url('../imagens/back-phone.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#login{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; /* faz com que tudo que estiver passando pra fora da borda fique escondido*/
+    height: 500px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
+}
+section#login > div#imagem{
+    display: block;
+    background: url('../imagens/back-form.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+div#formulario{
+    display: block;
+    padding: 10px;
+}
+#formulario h1{
+    text-align: center;
+    padding: 15px;
+}
+#formulario p{
+    font-size: small;
+    text-align: center;
+    padding: 0px 10px;
 }
