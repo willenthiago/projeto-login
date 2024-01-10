@@ -84,7 +84,7 @@ form > .campo > input{
     font-size: 1em;
     width: calc(100% - 33px);
     height: 100%;
-    transform: translateY(-6px);
+    transform: translateY(-7px);
     border: none;
     border-radius: 8px;
     padding: 0px 6px;
