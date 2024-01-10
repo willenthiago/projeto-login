@@ -16,24 +16,24 @@
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem vindo(a). Faça login para acessar o seu ambiente.</p>
-                <form action="login.php" method="post">
+                <p>Seja bem vindo(a). Faça login para acessar o seu ambiente de trabalho.</p>
+                <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
                         <span class="material-symbols-outlined">
                             account_circle
                         </span>
-                        <input type="email" name="login" id="idlogin">
+                        <input type="email" name="login" id="idlogin" required autocomplete="email" maxlength="30" placeholder="Seu email">
                         <label for="idlogin">Login</label>
                     </div>
                     <div class="campo">
                         <span class="material-symbols-outlined">
                             key
                         </span>
-                        <input type="password" name="senha" id="idsenha">
+                        <input type="password" name="senha" id="idsenha" required autocomplete="current-password" minlength="8" maxlength="16" placeholder="Sua senha">
                         <label for="idsenha">Senha</label>
                     </div>
                     <input type="submit" value="Entrar">
-                    <a href="esqueci.html">Esqueci a senha <span class="material-symbols-outlined">lock_reset</span></a>
+                    <a href="esqueci.html" class="botao">Esqueci a senha <span class="material-symbols-outlined">lock_reset</span></a>
                 </form>
             </div>
         </section>
