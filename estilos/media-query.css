@@ -27,9 +27,11 @@
 @media screen and (min-width: 992px) {
     body{
         background-image: url('../imagens/back-pc.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     section#login{
-        width: 80vw;
+        width: 60vw;
         height: 500px;
         position: absolute;
         left: 50%;
@@ -48,6 +50,10 @@
     }
     form > .campo{
         height: 40px;
+    }
+    form > .campo > input{
+        
+    transform: translateY(-6px);
     }
     form > input[type=submit]{
         height: 40px;
