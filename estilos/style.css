@@ -16,26 +16,15 @@ html{
     height: 100vh;
     width: 100vw;
 }
-body{
-    background-image: url('../imagens/back-phone.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left top;
-}
 main{
     position: relative;
     height: 100vh;
     width: 100vw;
 }
 #login{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /* faz com que tudo que estiver passando pra fora da borda fique escondido*/
-    height: 500px;
-    width: 250px;
-    border-radius: 20px;
+    height: 100vh;
+    width: 100vw;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
     transition: width .2s, height .2s;
@@ -46,7 +35,7 @@ section#login > div#imagem{
     background: url('../imagens/back-form.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 150px;
+    height: 250px;
 }
 div#formulario{
     display: block;
@@ -55,20 +44,21 @@ div#formulario{
 #formulario h1{
     text-align: center;
     padding: 15px;
+    margin-top: 15px;
 }
 #formulario p{
     font-size: 0.9em;
     text-align: center;
     padding: 0px 10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 form > .campo{
     display: block;
-    margin: 5px 0px;
+    margin: 10px 0px;
     padding-top: 7px;
     padding-left: 5px;
     background-color: #7a3964;
-    height: 40px;
+    height: 60px;
     border-radius: 10px;
 }
 form > .campo > label{
@@ -92,8 +82,8 @@ form > .campo > input{
 form > input[type=submit] {
     display: block;
     width: 100%;
-    height: 40px;
-    font-size: 1em;
+    height: 60px;
+    font-size: 1.2em;
     background-color: #fa975e;
     border: none;
     border-radius: 10px;
@@ -105,9 +95,9 @@ form > input[type=submit]:hover{
 .botao{
     display: block;
     width: 100%;
-    height: 40px;
-    padding-top: 5px;
-    margin-top: 5px;
+    height: 60px;
+    padding-top: 15px;
+    margin: 10px auto;
     border: 2px solid #77A1D9;
     border-radius: 10px;
     text-align: center;

@@ -1,7 +1,18 @@
 @charset 'UTF-8';
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url('../imagens/back-phone.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     section#login{
         width: 80vw;
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 15px;
     }    
     section#login > div#imagem{
         float: left;
@@ -19,6 +30,12 @@
     }
     section#login{
         width: 80vw;
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 15px;
     }
     section#login > div#imagem{
         float: right;
@@ -28,5 +45,16 @@
     section#login > div#formulario{
         float: left;
         width: 50%;
+    }
+    form > .campo{
+        height: 40px;
+    }
+    form > input[type=submit]{
+        height: 40px;
+        font-size: 1em;
+    }
+    .botao{
+        height: 40px;
+        padding: 5px 0px;
     }
 }
