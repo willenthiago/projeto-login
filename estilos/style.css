@@ -12,19 +12,14 @@
     padding: 0px;
     box-sizing: border-box;
 }
-html{
-    height: 100vh;
-    width: 100vw;
-}
-main{
-    position: relative;
+html, body{
     height: 100vh;
     width: 100vw;
 }
 #login{
     overflow: hidden; /* faz com que tudo que estiver passando pra fora da borda fique escondido*/
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
     transition: width .2s, height .2s;
@@ -37,21 +32,24 @@ section#login > div#imagem{
     background-repeat: no-repeat;
     height: 200px;
 }
-div#formulario{
-    display: block;
+#formulario-login{
+    display: none;
     padding: 10px;
 }
-#formulario h1{
+#formulario-login h1, #formulario-cadastro h1{
     text-align: center;
     padding: 15px;
 }
-#formulario p{
+#formulario-login p, #formulario-cadastro p{
     font-size: 0.9em;
     text-align: center;
     padding: 0px 10px;
     margin-bottom: 50px;
 }
-form > .campo{
+#formulario-login > p:last-child{
+    margin-top: 25px;
+}
+#formulario-login div > .campo{
     display: block;
     margin: 10px 0px;
     padding-top: 7px;
@@ -60,15 +58,15 @@ form > .campo{
     height: 60px;
     border-radius: 10px;
 }
-form > .campo > label{
+#formulario-login div > .campo > label{
     display: none;
 }
-form > .campo > span{
+#formulario-login div > .campo > span{
     width: 25px;
     font-size: 1.6em;
     color: rgb(214, 212, 212);
 }
-form > .campo > input{
+#formulario-login div > .campo > input{
     background-color: #96c2fa;
     font-size: 1em;
     width: calc(100% - 33px);
@@ -78,7 +76,7 @@ form > .campo > input{
     border-radius: 8px;
     padding: 0px 6px;
 }
-form > button[type=submit] {
+#formulario-login div > button{
     display: block;
     width: 100%;
     height: 60px;
@@ -88,10 +86,10 @@ form > button[type=submit] {
     border-radius: 10px;
     cursor: pointer;
 }
-form > button[type=submit]:hover{
+#formulario-login div > button:hover{
     background-color: #F2762E;
 }
-.botao{
+#formulario-login .botao{
     display: block;
     width: 100%;
     height: 60px;
@@ -103,6 +101,73 @@ form > button[type=submit]:hover{
     text-decoration: none;
     color: #f05800;
 }
-.botao > span{
+#formulario-login > .botao > span{
     font-size: 1em;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #77A1D9;
+    width: 100vw;
+    height: 30px;
+    padding: 4px 0;
+}
+
+footer p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer a{
+    position: relative;
+    float: right;
+    margin-right: 25px;
+    margin-left: -10px;
+    text-decoration: none;
+}
+footer a:last-child{
+    color: #0A66C2;
+}
+a.github{
+    color: #000;
+}
+#formulario-cadastro{
+    display: block;
+    padding: 10px;
+}
+#formulario-cadastro .campo{
+    margin: 10px 0px;
+    padding-left: 5px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #0A66C2;
+}#formulario-cadastro .campo:first-child{
+    margin-top: -25px;
+}
+#formulario-cadastro .campo label{
+    vertical-align: top;
+}
+#formulario-cadastro div > .campo > input{
+    background-color: #96c2fa;
+    font-size: 1em;
+    width: calc(100% - 5px);
+    height: calc(100% - 27px);
+    transform: translateY(2px);
+    border: none;
+    border-radius: 8px;
+    padding: 0px 6px;
+}
+#formulario-cadastro button{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 1.2em;
+    background-color: #fa975e;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#formulario-cadastro button:hover{
+    background-color: #F2762E;
 }

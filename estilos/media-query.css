@@ -19,9 +19,12 @@
         width: 40%;
         height: 100%;
     }
-    section#login > div#formulario{
+    section#login > div#formulario-login, #formulario-cadastro{
         float: right;
         width: 60%;
+    }
+    #formulario-cadastro .campo{
+        margin: 5px 0;
     }
 }
 @media screen and (min-width: 992px) {
@@ -32,6 +35,7 @@
     }
     section#login{
         width: 60vw;
+        max-width: 1100px;
         height: 500px;
         position: absolute;
         left: 50%;
@@ -44,17 +48,20 @@
         width: 50%;
         height: 100%;
     }
-    section#login > div#formulario{
+    section#login > div#formulario-login, #formulario-cadastro{
         float: left;
         width: 50%;
     }
-    form > .campo{
+    #formulario-cadastro .campo{
+        margin: 8px 0;
+    }
+    div > .campo{
         height: 40px;
     }
-    form> .campo > input{
+    div> .campo > input{
         transform: translateY(-6px);
     }
-    form > button[type=submit]{
+    div > button{
         height: 40px;
         font-size: 1em;
     }
