@@ -135,8 +135,8 @@ function validarCadastro(){
             location.href='index.html'
         },3000) 
 
-        btn.innerText = 'Cadastrando...'
-        btn.setAttribute('style', 'background-color: #00ff00');
+        btnCad.innerText = 'Cadastrando...'
+        btnCad.setAttribute('style', 'background-color: #00ff00');
     } else {
         alert('Preencha todos os dados corretamente!');
     }
