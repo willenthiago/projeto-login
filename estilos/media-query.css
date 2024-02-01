@@ -15,6 +15,11 @@
         border-radius: 15px;
     }    
     section#login > div#imagem{
+        display: block;
+        background: url('../imagens/back-form.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
         float: left;
         width: 40%;
         height: 100%;
@@ -23,8 +28,21 @@
         float: right;
         width: 60%;
     }
-    #formulario-cadastro .campo{
+    #formulario-login div .campo:first-child{
+        margin-top: -25px;
+    }
+    #formulario-login p:last-child{
+        margin-top: -10px;
+    }
+    #formulario-cadastro .campo-cadastro{
         margin: 5px 0;
+        height: 50px;
+    }
+    #formulario-cadastro .campo-cadastro:first-child{
+        margin-top: -25px;
+    }
+    #formulario-cadastro button:not(.form){
+        height: 50px;
     }
 }
 @media screen and (min-width: 992px) {
@@ -36,7 +54,7 @@
     section#login{
         width: 60vw;
         max-width: 1100px;
-        height: 500px;
+        max-height: 500px;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -44,16 +62,41 @@
         border-radius: 15px;
     }
     section#login > div#imagem{
+        display: block;
+        background: url('../imagens/back-form.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        float: right;
+        width: 50%;
+        height: 100%;
+        position: relative;
+        transition: ease;
+    }
+    section#login > div#formulario-login{
+        position: relative;
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    section#login > div#formulario-cadastro{
+        position: relative;
         float: right;
         width: 50%;
         height: 100%;
     }
-    section#login > div#formulario-login, #formulario-cadastro{
-        float: left;
-        width: 50%;
+    h1{
+        padding: 15px;
     }
-    #formulario-cadastro .campo{
-        margin: 8px 0;
+    #formulario-login p{
+        margin-bottom: 25px;
+    }
+    #formulario-cadastro .campo-cadastro:first-child{
+        margin-top: -20px;
+    }
+    #formulario-cadastro .campo-cadastro{
+        margin: 10px;
+        height: 50px;
     }
     div > .campo{
         height: 40px;
@@ -61,8 +104,10 @@
     div> .campo > input{
         transform: translateY(-6px);
     }
-    div > button{
-        height: 40px;
+    #btnCadastro{
+        height: 50px !important;
+        width: 423px !important;
+        margin: auto;
         font-size: 1em;
     }
     .botao{
