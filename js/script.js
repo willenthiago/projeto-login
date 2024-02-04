@@ -198,16 +198,27 @@ function validaLogin(){
 let form = 0;
 
 function mudaForm(){
-    if(form == 0){
-        imagem.style.position='absolute';
-        tipoForm1.style.display='none';
-        tipoForm2.style.display='block';
-        form = 1;
+    let device = window.matchMedia('(min-width: 992px)')
+    if(device.matches){
+        if(form == 0){
+            imagem.classList.add('slideLeft');
+            imagem.classList.remove('slideRight')
+            form = 1;
+        } else {
+            imagem.classList.remove('slideLeft');
+            imagem.classList.add('slideRight');
+            form = 0;
+        }
     } else {
-        imagem.style.position='relative';
-        tipoForm1.style.display='block';
-        tipoForm2.style.display='none';
-        form = 0;
+        if(form == 0){
+            tipoForm1.style.display='none';
+            tipoForm2.style.display='block';
+            form = 1;
+        } else {
+            tipoForm1.style.display='block';
+            tipoForm2.style.display='none';
+            form = 0;
+        }
     }
 }
 
