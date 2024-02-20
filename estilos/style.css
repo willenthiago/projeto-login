@@ -157,6 +157,7 @@ a.github{
 }
 #formulario-cadastro .campo-cadastro label{
     vertical-align: top;
+    color: #fff;
 }
 #formulario-cadastro div > .campo-cadastro > input{
     background-color: #96c2fa;
@@ -174,6 +175,7 @@ a.github{
     width: 100%;
     height: 60px;
     font-size: 1.2em;
+    font-weight: bold;
     background-color: #fa975e;
     border: none;
     border-radius: 10px;
